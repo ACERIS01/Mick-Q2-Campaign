@@ -207,6 +207,61 @@ h3{font-family:'Syne',sans-serif;font-weight:700;font-size:12px;color:#fff;margi
   h1{font-size:17px;}.campaign-name{font-size:20px;}
   .week-card .wc-posts{grid-template-columns:1fr;}
 }
+
+/* ── PLATFORM TAGS (calendar) ── */
+.plat-row{display:flex;gap:3px;flex-wrap:wrap;margin-top:6px;padding-top:6px;border-top:1px solid var(--b);}
+.plat{font-family:'DM Mono',monospace;font-size:6.5px;padding:2px 6px;border-radius:3px;letter-spacing:0.04em;font-weight:500;}
+.pl-li{background:rgba(10,102,194,0.18);color:#6eaee7;}
+.pl-ig{background:rgba(225,48,108,0.14);color:#e06090;}
+.pl-fb{background:rgba(24,119,242,0.14);color:#5b9de6;}
+.pl-tt{background:rgba(105,201,208,0.12);color:#69c9d0;}
+
+/* ── PLATFORM GRID (pre-launch & guide) ── */
+.pp-platforms{padding:11px 14px 12px;border-top:1px solid var(--b);background:rgba(255,255,255,0.012);}
+.pp-plat-label{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:0.12em;text-transform:uppercase;color:var(--td);margin-bottom:8px;}
+.pp-plat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.pp-plat-item{background:var(--bg3);border-radius:7px;padding:8px 9px;border:1px solid var(--b);}
+.pp-plat-name{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:0.06em;margin-bottom:2px;font-weight:500;}
+.pp-plat-format{font-size:8px;margin-bottom:4px;font-weight:500;}
+.pp-plat-notes{font-size:8.5px;color:var(--tm);line-height:1.5;}
+.li-item .pp-plat-name{color:#6eaee7;}
+.li-item .pp-plat-format{color:#6eaee7;}
+.ig-item .pp-plat-name{color:#e06090;}
+.ig-item .pp-plat-format{color:#e06090;}
+.fb-item .pp-plat-name{color:#5b9de6;}
+.fb-item .pp-plat-format{color:#5b9de6;}
+.tt-item .pp-plat-name{color:#69c9d0;}
+.tt-item .pp-plat-format{color:#69c9d0;}
+
+/* ── PLATFORM GUIDE TAB ── */
+.plat-strategy-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px;}
+.ps-card{background:var(--bg2);border:1px solid var(--b);border-radius:12px;overflow:hidden;}
+.ps-head{padding:11px 14px;border-bottom:1px solid var(--b);display:flex;align-items:center;gap:10px;}
+.ps-icon{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;}
+.ps-icon-li{background:rgba(10,102,194,0.15);}
+.ps-icon-ig{background:rgba(225,48,108,0.13);}
+.ps-icon-fb{background:rgba(24,119,242,0.13);}
+.ps-icon-tt{background:rgba(105,201,208,0.1);}
+.ps-meta{}
+.ps-plat-name{font-family:'Syne',sans-serif;font-weight:700;font-size:12px;color:#fff;}
+.ps-role{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:0.08em;text-transform:uppercase;color:var(--td);margin-top:1px;}
+.ps-body{padding:11px 14px;font-size:10px;color:var(--tm);line-height:1.6;}
+.ps-body strong{color:#fff;}
+.ps-formats{display:flex;flex-wrap:wrap;gap:3px;margin-top:8px;}
+.pf-chip{font-family:'DM Mono',monospace;font-size:7px;padding:2px 6px;border-radius:3px;background:var(--bg3);border:1px solid var(--b);color:var(--td);}
+.post-plat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:16px;}
+.pprc{background:var(--bg2);border:1px solid var(--b);border-radius:9px;padding:10px 11px;}
+.pprc-plat{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:0.06em;margin-bottom:3px;font-weight:500;}
+.pprc-format{font-size:9px;font-weight:500;margin-bottom:4px;}
+.pprc-note{font-size:9px;color:var(--tm);line-height:1.5;}
+.pprc.li .pprc-plat{color:#6eaee7;} .pprc.li .pprc-format{color:#6eaee7;}
+.pprc.ig .pprc-plat{color:#e06090;} .pprc.ig .pprc-format{color:#e06090;}
+.pprc.fb .pprc-plat{color:#5b9de6;} .pprc.fb .pprc-format{color:#5b9de6;}
+.pprc.tt .pprc-plat{color:#69c9d0;} .pprc.tt .pprc-format{color:#69c9d0;}
+
+@media(max-width:660px){
+  .plat-strategy-grid,.pp-plat-grid,.post-plat-row{grid-template-columns:1fr 1fr;}
+}
 </style>
 </head>
 <body>
@@ -214,15 +269,16 @@ h3{font-family:'Syne',sans-serif;font-weight:700;font-size:12px;color:#fff;margi
 <div style="margin-bottom:16px;">
   <div class="ey">ACERIS Technologies · Q2 2026</div>
   <h1>Campaign Canvas — Revised v7.0</h1>
-  <p class="sub">DECIDE. DON'T GUESS. &nbsp;|&nbsp; April 7 – June 1, 2026 &nbsp;|&nbsp; Updated to reflect SLC Architecture v7.0 (54 modules)</p>
+  <p class="sub">DECIDE. DON'T GUESS. &nbsp;|&nbsp; April 7 – June 1, 2026 &nbsp;|&nbsp; Multi-Platform: Instagram · Facebook · TikTok · LinkedIn &nbsp;|&nbsp; SLC Architecture v7.0 (54 modules)</p>
 </div>
 
 <div class="tabs">
   <button class="tab on" onclick="sw('overview')">Overview</button>
   <button class="tab" onclick="sw('phases')">Phase Plan</button>
   <button class="tab" onclick="sw('calendar')">Content Calendar</button>
-  <button class="tab" onclick="sw('prelaunch')">Pre-Launch Week</button>
+  <button class="tab" onclick="sw('prelaunch')">Pre-Launch Week ★</button>
   <button class="tab" onclick="sw('messaging')">Messaging Bank</button>
+  <button class="tab" onclick="sw('platforms')">Platform Guide</button>
 </div>
 
 <!-- ══════════════════════════════
@@ -233,7 +289,7 @@ h3{font-family:'Syne',sans-serif;font-weight:700;font-size:12px;color:#fff;margi
   <div class="campaign-banner">
     <div class="campaign-sub">Campaign Name</div>
     <div class="campaign-name">DECIDE. DON'T GUESS.</div>
-    <div class="campaign-dates">8 weeks &nbsp;·&nbsp; April 7 – June 1, 2026 &nbsp;·&nbsp; LinkedIn Organic + Paid</div>
+    <div class="campaign-dates">8 weeks &nbsp;·&nbsp; April 7 – June 1, 2026 &nbsp;·&nbsp; <span class="plat pl-ig">IG</span>&nbsp;<span class="plat pl-fb">FB</span>&nbsp;<span class="plat pl-tt">TikTok</span>&nbsp;<span class="plat pl-li">LinkedIn</span> &nbsp;·&nbsp; Pre-Launch starts March 26</div>
   </div>
 
   <div class="stat-row">
@@ -303,12 +359,18 @@ h3{font-family:'Syne',sans-serif;font-weight:700;font-size:12px;color:#fff;margi
       <div class="obj-val"><strong>3 SLC/Tailored-Need projects</strong> scoped · <strong>50+ waitlist signups</strong> for co-pilot · <strong>+40% LinkedIn followers</strong> from April baseline</div>
     </div>
     <div class="obj">
-      <div class="obj-label">Primary Channel</div>
-      <div class="obj-val"><strong>LinkedIn organic</strong> (primary) + <strong>LinkedIn paid</strong> for boosts in Phase 2–4. Budget: <strong>฿30,000–50,000 THB</strong>. Thai SME founders and solopreneurs.</div>
+      <div class="obj-label">Platform Strategy</div>
+      <div class="obj-val">
+        <strong>LinkedIn</strong> — primary B2B, thought leadership, paid boosts Phase 2–4<br>
+        <strong>Instagram</strong> — carousels + Reels, visual frameworks, younger founders<br>
+        <strong>Facebook</strong> — broader Thai SME reach, share-adapted posts, community groups<br>
+        <strong>TikTok</strong> — short-form video (30–60 sec), talking head + text overlay<br>
+        Budget: <strong>฿30,000–50,000 THB</strong> (LinkedIn + Meta paid in Phase 2–4)
+      </div>
     </div>
     <div class="obj">
       <div class="obj-label">Content Rhythm</div>
-      <div class="obj-val"><strong>3 posts/week:</strong> 1 insight, 1 framework/story, 1 product/action. 4 pillars: AI Strategy &amp; Insight · Business Problem Solving · ACERIS in Action · What Is ACERIS?</div>
+      <div class="obj-val"><strong>3 posts/week per platform:</strong> 1 insight, 1 framework/story, 1 product/action. Each LinkedIn post is adapted for IG (carousel/Reel), FB (repurposed), and TikTok (video). 4 pillars: AI Strategy &amp; Insight · Business Problem Solving · ACERIS in Action · What Is ACERIS?</div>
     </div>
   </div>
 
@@ -543,6 +605,7 @@ h3{font-family:'Syne',sans-serif;font-weight:700;font-size:12px;color:#fff;margi
           <div class="post-hook">"Most AI advice is wrong for your business."</div>
           <div class="post-angle">Not because it's bad advice — because it's not advice for you. Generic AI guidance scales. Specific business results don't. Problem-seeds the entire campaign. No product mention.</div>
           <div class="post-cta">CTA: Follow for the specific version</div>
+          <div class="plat-row"><span class="plat pl-li">LinkedIn</span><span class="plat pl-ig">IG Carousel</span><span class="plat pl-fb">Facebook</span><span class="plat pl-tt">TikTok 45s</span></div>
         </div>
         <div class="post-card">
           <div class="post-date">Wed Apr 9</div>
@@ -550,6 +613,7 @@ h3{font-family:'Syne',sans-serif;font-weight:700;font-size:12px;color:#fff;margi
           <div class="post-hook">"What ACERIS actually does. And doesn't."</div>
           <div class="post-angle">Direct, honest positioning. Not a tool reseller, not an automation agency. We start with a business problem and work backward. Answers: "What is ACERIS?" for the first time.</div>
           <div class="post-cta">CTA: None — pure awareness</div>
+          <div class="plat-row"><span class="plat pl-li">LinkedIn</span><span class="plat pl-ig">IG Carousel</span><span class="plat pl-fb">Facebook</span><span class="plat pl-tt">TikTok 60s</span></div>
         </div>
         <div class="post-card">
           <div class="post-date">Fri Apr 11</div>
@@ -557,6 +621,7 @@ h3{font-family:'Syne',sans-serif;font-weight:700;font-size:12px;color:#fff;margi
           <div class="post-hook">"The clarity problem: why the right question matters more than the right tool."</div>
           <div class="post-angle">Introduces the core campaign idea. Most businesses buy tools before they've defined the problem. Clarity first, investment second. Framework that sets up the diagnostic offer next week.</div>
           <div class="post-cta">CTA: Save this post</div>
+          <div class="plat-row"><span class="plat pl-li">LinkedIn</span><span class="plat pl-ig">IG Carousel</span><span class="plat pl-fb">Facebook</span><span class="plat pl-tt">TikTok 45s</span></div>
         </div>
       </div>
     </div>
@@ -574,6 +639,7 @@ h3{font-family:'Syne',sans-serif;font-weight:700;font-size:12px;color:#fff;margi
           <div class="post-hook">"The Thai SME AI trap: buying tools before buying a map."</div>
           <div class="post-angle">Thai-market-specific angle. Local founders are being sold AI tools before understanding their own operations. The tool becomes the problem, not the solution. Relatable, not preachy.</div>
           <div class="post-cta">CTA: Comment — has this happened to you?</div>
+          <div class="plat-row"><span class="plat pl-li">LinkedIn</span><span class="plat pl-ig">IG Reel</span><span class="plat pl-fb">Facebook</span><span class="plat pl-tt">TikTok 30s</span></div>
         </div>
         <div class="post-card">
           <div class="post-date">Wed Apr 16</div>
@@ -581,6 +647,7 @@ h3{font-family:'Syne',sans-serif;font-weight:700;font-size:12px;color:#fff;margi
           <div class="post-hook">"A real business. A real mistake. One overlooked question."</div>
           <div class="post-angle">A story post. Anonymised founder story: bought an AI solution, it didn't work. Not because the tool was bad — because the problem hadn't been defined. The question that changed it. Brand-building through empathy.</div>
           <div class="post-cta">CTA: Tag a founder who needs to hear this</div>
+          <div class="plat-row"><span class="plat pl-li">LinkedIn</span><span class="plat pl-ig">IG Carousel</span><span class="plat pl-fb">Facebook</span><span class="plat pl-tt">TikTok 60s</span></div>
         </div>
         <div class="post-card">
           <div class="post-date">Fri Apr 18</div>
@@ -588,6 +655,7 @@ h3{font-family:'Syne',sans-serif;font-weight:700;font-size:12px;color:#fff;margi
           <div class="post-hook">"What is ACERIS? The 10-second, 30-second, and 3-minute answer."</div>
           <div class="post-angle">Three-level answer post. Directly addresses the brand clarity problem. Mick's voice: honest, specific, no marketing language. Ends with: "Strategy first. Always." Reinforces positioning before Phase 2 product push.</div>
           <div class="post-cta">CTA: Follow for what comes Monday</div>
+          <div class="plat-row"><span class="plat pl-li">LinkedIn</span><span class="plat pl-ig">IG Carousel</span><span class="plat pl-fb">Facebook</span><span class="plat pl-tt">TikTok 45s</span></div>
         </div>
       </div>
     </div>
@@ -605,6 +673,7 @@ h3{font-family:'Syne',sans-serif;font-weight:700;font-size:12px;color:#fff;margi
           <div class="post-hook">"30 minutes. Free. Your top AI priorities — identified."</div>
           <div class="post-angle">Diagnostic announcement. Free 30-min session, written summary. 5 slots/month cap — scarcity built in. Clear structure: what we do, what you get, how to book. First explicit product mention of the campaign.</div>
           <div class="post-cta">CTA: Booking link in bio</div>
+          <div class="plat-row"><span class="plat pl-li">LinkedIn</span><span class="plat pl-ig">IG Story + Post</span><span class="plat pl-fb">Facebook</span><span class="plat pl-tt">TikTok 45s</span></div>
         </div>
         <div class="post-card">
           <div class="post-date">Wed Apr 23</div>
@@ -612,6 +681,7 @@ h3{font-family:'Syne',sans-serif;font-weight:700;font-size:12px;color:#fff;margi
           <div class="post-hook">"We mapped 54 things before we could write a single diagnostic question."</div>
           <div class="post-angle">SLC v7.0 credibility signal. The diagnostic isn't a survey — it's the input layer for a 54-module platform. Every question determines which modules activate. The depth of preparation behind a 30-minute conversation. Implies the platform without announcing it.</div>
           <div class="post-cta">CTA: Waitlist link (first mention)</div>
+          <div class="plat-row"><span class="plat pl-li">LinkedIn</span><span class="plat pl-ig">IG Carousel</span><span class="plat pl-fb">Facebook</span><span class="plat pl-tt">TikTok 30s</span></div>
         </div>
         <div class="post-card">
           <div class="post-date">Fri Apr 25</div>
@@ -619,6 +689,7 @@ h3{font-family:'Syne',sans-serif;font-weight:700;font-size:12px;color:#fff;margi
           <div class="post-hook">"5 slots. Here's what we do in each one."</div>
           <div class="post-angle">Process transparency post. Step-by-step what happens in a diagnostic: the 30 minutes, the written summary, what the output looks like. Lowers the barrier to booking. Second booking CTA of Phase 2.</div>
           <div class="post-cta">CTA: Book your slot</div>
+          <div class="plat-row"><span class="plat pl-li">LinkedIn</span><span class="plat pl-ig">IG Reel</span><span class="plat pl-fb">Facebook</span><span class="plat pl-tt">TikTok 60s</span></div>
         </div>
       </div>
     </div>
@@ -636,6 +707,7 @@ h3{font-family:'Syne',sans-serif;font-weight:700;font-size:12px;color:#fff;margi
           <div class="post-hook">"The diagnostic isn't a survey. It's more like an MBTI for your business."</div>
           <div class="post-angle">MBTI analogy in full. The test = the diagnostic. Your result = your business DNA profile. The platform = built from that result. It already knows you before you log in. Bridges trust gap around what happens after booking.</div>
           <div class="post-cta">CTA: Book — or join waitlist</div>
+          <div class="plat-row"><span class="plat pl-li">LinkedIn</span><span class="plat pl-ig">IG Carousel</span><span class="plat pl-fb">Facebook</span><span class="plat pl-tt">TikTok 45s</span></div>
         </div>
         <div class="post-card">
           <div class="post-date">Wed Apr 30</div>
@@ -643,6 +715,7 @@ h3{font-family:'Syne',sans-serif;font-weight:700;font-size:12px;color:#fff;margi
           <div class="post-hook">"Two ways into ACERIS. Same destination."</div>
           <div class="post-angle">Path A vs Path B explained. Path A: diagnostic first, SLC auto-configured. Path B: you already know your problem, go straight to a scoping call. No wrong answer. Removes objection for people who think they don't need a diagnostic.</div>
           <div class="post-cta">CTA: Which path are you on?</div>
+          <div class="plat-row"><span class="plat pl-li">LinkedIn</span><span class="plat pl-ig">IG Carousel</span><span class="plat pl-fb">Facebook</span><span class="plat pl-tt">TikTok 30s</span></div>
         </div>
         <div class="post-card">
           <div class="post-date">Fri May 2</div>
@@ -650,6 +723,7 @@ h3{font-family:'Syne',sans-serif;font-weight:700;font-size:12px;color:#fff;margi
           <div class="post-hook">"Strategy before tools. Always. Here's why that's not a platitude."</div>
           <div class="post-angle">Reinforces the brand principle with specific examples of what "strategy first" means in practice at ACERIS. Not a lecture — a demonstration. Closes Phase 2 with a brand reset before the proof phase begins.</div>
           <div class="post-cta">CTA: Follow</div>
+          <div class="plat-row"><span class="plat pl-li">LinkedIn</span><span class="plat pl-ig">IG Reel</span><span class="plat pl-fb">Facebook</span><span class="plat pl-tt">TikTok 45s</span></div>
         </div>
       </div>
     </div>
